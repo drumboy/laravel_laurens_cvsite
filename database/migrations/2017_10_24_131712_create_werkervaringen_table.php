@@ -12,7 +12,7 @@ class CreateWerkervaringenTable extends Migration
      */
     public function up()
     {
-        Schema::create('werkervaringen', function (Blueprint $table) {
+        Schema::create('werkervarings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('bedrijf');
             $table->string('periode');
@@ -28,6 +28,6 @@ class CreateWerkervaringenTable extends Migration
      */
     public function down()
     {
-        Schema::drop('werkervaringen');
+        Schema::drop('werkervarings');
     }
 }
